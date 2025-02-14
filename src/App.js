@@ -1,16 +1,20 @@
 import './App.css';
-import * as React from 'react';
-import Navbar from './Components/Navbar/Navbar';
+import React from 'react';
+import NavbarV2 from './Components/Navbar/NavbarV2';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+import AppTheme from './Components/Theme/AppTheme';
 import { Outlet } from 'react-router';
 import Grid from '@mui/material/Grid2';
 
-function App() {
+export default function App(props){
   return (
-    <Grid container>        
-      <Navbar/>
-      <Outlet/>
-    </Grid>
-  );
-}
+    <AppTheme {...props}>
+      <CssBaseline enableColorScheme/>
+      <NavbarV2/>
+      <Container maxWidth="lg" component="main" sx={{display:'flex', flexDirection: 'column', my:16, gap:4}}>
 
-export default App;
+      </Container>
+    </AppTheme>
+  )
+}
