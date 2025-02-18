@@ -1,10 +1,10 @@
-import Home from './Pages/Home/Home';
-import Contact from './Pages/ContactMe/Contact';
-import Education from './Pages/Education/Education';
-import Experience from './Pages/Experience/Experience';
-import Gaming from './Pages/Gaming/Gaming';
-import Projects from './Pages/Projects/Project';
-import Skills from './Pages/Skills/Skills';
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Gaming from './Pages/Gaming';
+import Projects from './Pages/Project';
+import Skills from './Pages/Skills';
 
 export const RouteItems = [
     {id: 0, path:'home', element:<Home/>},
