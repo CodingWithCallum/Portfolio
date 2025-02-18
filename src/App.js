@@ -6,15 +6,32 @@ import Container from '@mui/material/Container';
 import AppTheme from './Components/Theme/AppTheme';
 import { Outlet } from 'react-router';
 import Grid from '@mui/material/Grid2';
+import Hero from './Components/Hero/Hero';
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Gaming from './Pages/Experience';
+import Project from './Pages/Project';
+import Skills from './Pages/Skills';
+import { Divider } from '@mui/material';
 
 export default function App(props){
   return (
-    <AppTheme {...props}>
+  <AppTheme {...props}>
       <CssBaseline enableColorScheme/>
       <NavbarV2/>
-      <Container maxWidth="lg" component="main" sx={{display:'flex', flexDirection: 'column', my:16, gap:4}}>
-
-      </Container>
-    </AppTheme>
-  )
-}
+      <Hero/>
+      <div>
+          <Divider/>
+        <Education/>
+          <Divider/>
+        <Experience/>
+          <Divider/>
+        <Gaming/>
+          <Divider/>
+        <Project/>
+          <Divider/>
+        <Skills/>
+          <Divider/>
+      </div>
+  </AppTheme>
+  )}
