@@ -66,19 +66,10 @@ export default function NavbarV2(){
                                         <CloseRoundedIcon/>
                                     </IconButton>
                                 </Box>
-                                <MenuItem>Features</MenuItem>
-                                <MenuItem>Testimonials</MenuItem>
-                                <MenuItem>Highlights</MenuItem>
-                                <MenuItem>Pricing</MenuItem>
-                                <MenuItem>FAQ</MenuItem>
-                                <MenuItem>Blog</MenuItem>
-                                <Divider sx={{ my:3}}/>
-                                <MenuItem>
-                                    <Button color="primary" variant="contained" fullWidth>Sign up</Button>
-                                </MenuItem>
-                                <MenuItem>
-                                    <Button color="primary" variant="outlined" fullWidth>Sign in</Button>
-                                </MenuItem>
+                                {NavbarItems.map((item, index) => (
+                                <MenuItem style={{marginTop: '2px', marginBottom:'2px'}}>{item.icon}{item.label}</MenuItem>
+                                ))}
+                                {/* <Divider sx={{ my:3}}/> */}
                             </Box>
                         </Drawer>
                     </Box>

@@ -74,13 +74,13 @@ export default function ColorModeIconDropdown(props) {
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
-        <MenuItem selected={mode === 'system'} onClick={handleMode('system')}>
+        <MenuItem selected={mode === 'system'} onClick={handleMode('system')} style={{marginTop: '2px', marginBottom:'2px'}}>
           System
         </MenuItem>
-        <MenuItem selected={mode === 'light'} onClick={handleMode('light')}>
+        <MenuItem selected={mode === 'light'} onClick={handleMode('light')} style={{marginTop: '2px', marginBottom:'2px'}}>
           Light
         </MenuItem>
-        <MenuItem selected={mode === 'dark'} onClick={handleMode('dark')}>
+        <MenuItem selected={mode === 'dark'} onClick={handleMode('dark')} style={{marginTop: '2px', marginBottom:'2px'}}>
           Dark
         </MenuItem>
       </Menu>
