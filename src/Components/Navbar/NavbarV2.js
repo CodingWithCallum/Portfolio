@@ -37,7 +37,7 @@ export default function NavbarV2(){
     };
 
     return (
-        <AppBar position="fixed">
+        <AppBar position="fixed" style={{background: 'transparent', boxShadow: 'none', marginTop: 'var(--template-frame-height, 15px)'}}>
             <Container maxWidth="lg">
                 <StyledToolbar variant="dense" disableGutters>
                     <Box sx={{flexGrow: 1, display: 'flex', alignItems: 'center', px: 0}}>
