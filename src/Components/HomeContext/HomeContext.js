@@ -16,12 +16,12 @@ export default function HomeContext() {
         <Grid item xs={12} sm={6} md={4}>
             <Card>
                 <CardActionArea>
-                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="School Name" subheader="dates at school"/>
+                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="Education and Learning" subheader="From Rhodes University to Code Academy"/>
                     <CardMedia component="img" height="194" img="https://source.unsplash.com/random"/>
                 </CardActionArea>
                 <CardActionArea>
                     <CardContent>
-                        <p>some info on the school can go here to fill up the space</p>
+                        <p> Brief info on education</p>
                     </CardContent>
                 </CardActionArea>
             </Card>
@@ -29,12 +29,12 @@ export default function HomeContext() {
         <Grid item xs={12} sm={6} md={4}>
             <Card>
                 <CardActionArea>
-                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="School Name" subheader="dates at school"/>
+                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="Work Experience" subheader="Knowledge application and outreach"/>
                     <CardMedia component="img" height="194" img="https://source.unsplash.com/random"/>
                 </CardActionArea>
                 <CardActionArea>
                     <CardContent>
-                        <p>some info on the school can go here to fill up the space</p>
+                        <p>Brief information on working experience and outreach</p>
                     </CardContent>
                 </CardActionArea>
             </Card>
@@ -42,12 +42,12 @@ export default function HomeContext() {
         <Grid item xs={12} sm={6} md={4}>
             <Card>
                 <CardActionArea>
-                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="School Name" subheader="dates at school"/>
+                    <CardHeader avatar={<Avatar aria-label="School">R</Avatar>} title="Projects" subheader="My growing list of projects in progress"/>
                     <CardMedia component="img" height="194" img="https://source.unsplash.com/random"/>
                 </CardActionArea>
                 <CardActionArea>
                     <CardContent>
-                        <p>some info on the school can go here to fill up the space</p>
+                        <p>some info on projects</p>
                     </CardContent>
                 </CardActionArea>
             </Card>
