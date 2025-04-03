@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import NotFound from './Pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router";
 import { RouteItems } from './RouteItems'
@@ -15,6 +16,7 @@ ReactDOM.createRoot(root).render(
         <Route path={item.path} element={item.element}/>
       ))}
       </Route>
+      <Route path="*" element={<NotFound/>}></Route>
     </Routes>
   </BrowserRouter>
 )
